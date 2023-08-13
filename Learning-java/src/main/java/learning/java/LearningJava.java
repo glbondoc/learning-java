@@ -21,9 +21,7 @@ public class LearningJava {
         System.out.println("Enter second number: ");
         int secondnum= scan.nextInt ();
         
-        if (symbol == '+'){
-            System.out.println(firstnum+secondnum);
-        }
+        add(firstnum, secondnum, symbol);     
         if (symbol == '-') {
             System.out.println(firstnum-secondnum);
         }
@@ -34,4 +32,13 @@ public class LearningJava {
             System.out.println(firstnum/secondnum);
         }
     }
+    
+    public static void add(int x, int y, char c) {
+        if (c == '+') {
+            System.out.println(x + y);
+        }
+    }
 }
+
+// 1. convert - * / to separate functions
+// 2. move if statements into functions
